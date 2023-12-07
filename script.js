@@ -4,7 +4,8 @@ document.getElementById('submitBtn').addEventListener('click', function() {
 
     // Define codes and their corresponding messages in lower case
     var codes = {
-        'rumpleteazer': 'Codeword found: RUMPLETEAZER',
+        'rumpleteazer': 'Correct! Codeword found: RUMPLETEAZER',
+        'willard': 'Correct! Unlock: Kitchen Door. Living Room Door.',
         // Add more codes and messages as needed
     };
 
