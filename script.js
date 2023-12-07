@@ -1,16 +1,20 @@
 document.getElementById('submitBtn').addEventListener('click', function() {
-    var code = document.getElementById('codeInput').value;
+    var inputCode = document.getElementById('codeInput').value.toLowerCase();
     var message = '';
 
-    // Define codes and their corresponding messages
+    // Define codes and their corresponding messages in lower case
     var codes = {
-        '1234': 'Welcome to level 2!',
-        '5678': 'You found the secret room!',
+        'rumpleteazer': 'Codeword found: RUMPLETEAZER',
         // Add more codes and messages as needed
     };
 
-    message = codes[code] || 'Incorrect. Try again';
+    // Convert keys in codes object to lower case
+    var lowerCaseCodes = {};
+    for (var code in codes) {
+        lowerCaseCodes[code.toLowerCase()] = codes[code];
+    }
+
+    message = lowerCaseCodes[inputCode] || 'Incorrect. Try again';
 
     document.getElementById('message').textContent = message;
 });
-
