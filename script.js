@@ -4,8 +4,9 @@ document.getElementById('submitBtn').addEventListener('click', function() {
 
     // Define codes and their corresponding messages in lower case
     var codes = {
-        'rumpleteazer': 'Correct! Codeword found: RUMPLETEAZER',
+        'rumpleteazer': 'Correct! Lead found: RUMPLETEAZER',
         'willard': 'Correct! Unlock: Kitchen Door. Living Room Door.',
+        'morphine': 'Correct! Lead found: MORPHINE',
         // Add more codes and messages as needed
     };
 
